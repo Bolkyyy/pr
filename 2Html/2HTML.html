@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Задание</title>
+</head>
+<body>
+     <form action="/register" method="POST">
+        <h1>Регистрация </h1>
+        <div>
+            <label for="name">Имя: </label>
+            <input type="text" placeholder="Введите ваше имя">
+        </div>
+        <div>
+            <label for="email">Электронная почта: </label>
+            <input type="email" placeholder="1234@gmail.com">
+        </div>
+        <div>
+            <label for="password">Пароль: </label>
+            <input type="password" placeholder="Введите пароль">
+        </div>
+        <div>
+            <label for="confirm_password">Подтверждение пароля: </label>
+            <input type="password" placeholder="Повторите пароль">
+        </div>
+        <div>
+            <label for="date">Дата рождения: </label>
+            <input type="date">
+        </div>
+        <div>
+            <label>Пол:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мужской</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Женский</label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="polisity"> Я согласен с условиями использования и политикой конфиденциальности</label>
+        </div>
+        <div>
+            <button>Зарегистрироваться</button>
+        </div>
+     </form>
+</body>
+</html>
