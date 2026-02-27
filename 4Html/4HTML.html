@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Задание</title>
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1>Мой список задач</h1>
+        </div>
+        
+        <fieldset>
+            <legend>Добавить новую задачу</legend>
+            <label for="newtask">Новая задача: </label>
+            <input type="text" placeholder="Введите задачу">
+            <button>Добавить</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Фильтры</legend>
+            <input type="radio">
+            <label for="all">Все</label>
+            <input type="radio">
+            <label for="active">Активные</label>
+            <input type="radio">
+            <label for="completed">Завершенные</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Список задач</legend>
+            <div>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <label for="task1">Купить молоко</label>
+                        <button>Удалить</button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="task1">Стать миллионером</label>
+                        <button>Удалить</button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="task1">Купить еще молока</label>
+                        <button>Удалить</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="alltasks">Всего задач: 3</div>
+        </fieldset>
+
+    </main>
+</body>
+</html>
