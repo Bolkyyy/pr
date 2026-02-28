@@ -1,0 +1,128 @@
+   * {
+            margin: 0 auto;
+            padding: 0 auto;
+            box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Montserrat";
+        background-color: #e8e8e8;
+    }
+
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #2c3e50;
+            text-align: center;
+            width: 90%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+    }
+    
+    .cont {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        background-color: white;
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav h1 {
+        margin-top: 8px;
+        text-align: center;
+        font-weight: 800;
+        color: white;
+        margin-left: 35px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin-top: 7px;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+    nav a:hover {
+        color: #2c3e50;
+        background-color: white;
+        transform: translateY(-2px);
+    }
+
+    main ul {
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    main li {
+        margin-bottom: 15px;
+    }
+
+    .post h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    main img{
+        width: 800px;
+        border-radius: 7px;
+    }
+
+    aside {
+        position: fixed;
+        background-color: #2c3e50;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 3%;
+        top: 260px;
+        right: 120px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    aside a {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    aside ul {
+        list-style: none;
+        text-align: center;
+        align-items: center;margin-right: 30px;
+    }
+
+    aside i {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: #2c3e50;
+    }
+
