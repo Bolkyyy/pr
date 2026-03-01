@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/4Html/4CSS.css">
     <title>4 Задание</title>
 </head>
 <body>
@@ -11,24 +12,30 @@
             <h1>Мой список задач</h1>
         </div>
         
-        <fieldset>
+        <fieldset class="newtask">
             <legend>Добавить новую задачу</legend>
             <label for="newtask">Новая задача: </label>
             <input type="text" placeholder="Введите задачу">
             <button>Добавить</button>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="radiobtns">
             <legend>Фильтры</legend>
-            <input type="radio">
-            <label for="all">Все</label>
-            <input type="radio">
-            <label for="active">Активные</label>
-            <input type="radio">
-            <label for="completed">Завершенные</label>
+            <div class="filter-tab">
+                <input type="radio" name="filter" id="all" checked>
+                <label for="all">Все</label>
+            </div>
+            <div class="filter-tab">
+                <input type="radio" name="filter" id="active">
+                <label for="active">Активные</label>
+            </div>
+            <div class="filter-tab">
+                <input type="radio" name="filter" id="completed">
+                <label for="completed">Завершенные</label>
+            </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="tasks">
             <legend>Список задач</legend>
             <div>
                 <ul>
