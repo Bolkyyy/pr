@@ -2,7 +2,7 @@
             margin: 0 auto;
             padding: 0 auto;
             box-sizing: border-box;
-    }
+    } 
 
     html, body {
         height: 100%; 
@@ -135,4 +135,11 @@
         font-family: "Montserrat";
         font-size: 15px;
         transform: scale(1.1);
+    }
+
+    .error-message {
+        color: #7aafe9;
+        font-size: 0.9em;
+        margin-top: 4px;
+        min-height: 1.2em;
     }

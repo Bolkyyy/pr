@@ -31,26 +31,22 @@ main {
     font-size: 32px;
 }
 
-.display {
+#display {
     background: #25323f;
     padding: 20px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     border: 2px solid #11181f;
-    border-bottom: none;
-}
-
-.display p {
+    width: 100%;
     color: white;
-    font-size: 40px;
-    text-align: right;
+    font-size: 24px;
+    font-family: 'Montserrat';
 }
 
 .calculator {
     background: #16222e;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     border: 2px solid #11181f;
-    border-top: none;
 }
 
 .buttons {
@@ -85,11 +81,11 @@ table {
     height: 100%;
 }
 
-.function {
+.function, .clear {
     background: #4a4a4a;
 }
 
-.equals {
+#equals {
     background: #2f4050;
 }
 

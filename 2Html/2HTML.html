@@ -7,31 +7,32 @@
     <title>2 Задание</title>
 </head>
 <body>
-     <form action="/register" method="POST">
+     <form action="/register" method="POST" id="registration-form">
         <h1>Регистрация </h1>
         <div class="name">
             <label for="name">Имя</label><br>
-            <input type="text" placeholder="Введите ваше имя">
+            <input type="text" id="text" placeholder="Введите ваше имя">
         </div>
 
-        <div class="email">
-            <label for="email">Электронная почта</label><br>
-            <input type="email" placeholder="1234@gmail.com">
+        <div class="form-group">
+            <label for="email" id="email">Электронная почта</label><br>
+            <input type="email" id="email" required placeholder="1234@gmail.com">
         </div>
 
         <div class="password">
-            <label for="password">Пароль</label><br>
-            <input type="password" placeholder="Введите пароль">
+            <label for="password" id="password">Пароль</label><br>
+            <input type="password" id="password" placeholder="Введите пароль" required>
         </div>
 
         <div class="confirm_password">
-            <label for="confirm_password">Подтверждение пароля</label><br>
-            <input type="password" placeholder="Повторите пароль">
+            <label for="confirm_password" id="confirm_password">Подтверждение пароля</label><br>
+            <input type="password" id="confirm_password" placeholder="Повторите пароль" required>
         </div>
 
-        <div class="date">
-            <label for="date">Дата рождения</label><br>
-            <input type="date">
+        <!-- ДР -->
+        <div class="form-group">
+            <label for="birthdate">Дата рождения</label><br>
+            <input type="text" id="birthdate" placeholder="ДД.ММ.ГГГГ" maxlength="10">
         </div>
 
         <div class="pol">
@@ -51,8 +52,11 @@
         </div>
 
         <div class="btn">
-            <button>Зарегистрироваться</button>
+            <button type="submit">Зарегистрироваться</button>
         </div>
+        <div id="password-error" class="error-message"></div>
      </form>
+
+     <script src="/2Html/2JS.js"></script>
 </body>
 </html>

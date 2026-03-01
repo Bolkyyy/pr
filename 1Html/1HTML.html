@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/1Html/1CSS.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 Задание</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Задание</title> 
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-nav">
             <h1>Мой блог</h1>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О себе</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
             </ul>
+            <input type="search" id="search-input" placeholder="Поиск по блогу...">
+            <button id="theme-toggle">🌙 / ☀️</button>
         </nav>
     </header>
 
@@ -23,21 +25,21 @@
             <li>
                 <div class="post">
                     <h3>Пост № 1</h3>
-                    <img src="/Images/pizza.webp" alt="КАРТИНКА ПИЦЦЫ">
+                    <img src="/Images/pizza.webp" alt="КАРТИНКА ПИЦЦЫ" class="lazy" data-src = "https://img.freepik.com/free-photo/close-up-delicious-pizza_23-2150852197.jpg?semt=ais_hybrid&w=740&q=80">
                     <p>Сегодня я кушал вкусную пиццу</p>
                 </div>
             </li>
             <li>
                 <div class="post">
                     <h3>Пост № 2</h3>
-                    <img src="/Images/Paris.jpg" alt="КАРТИНКА ПАРИЖА">
+                    <img src="/Images/Paris.jpg" alt="КАРТИНКА ПАРИЖА" class="lazy" data-src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1M6xoX.img?w=1280&h=720&m=4&q=64">
                     <p>Сегодня перед парами я гулял в Париже</p>
                 </div>
             </li>
             <li>
                 <div class="post">
                     <h3>Пост № 3</h3>
-                    <img src="/Images/volleyball.webp" alt="КАРТИНКА ВОЛЕЙБОЛЬНОЙ КОМАНДЫ">
+                    <img src="/Images/volleyball.webp" alt="КАРТИНКА ВОЛЕЙБОЛЬНОЙ КОМАНДЫ" class="lazy" data-src="https://kostroma.top24.news/wp-content/uploads/2026/02/komanda-scaled.jpg">
                     <p>Сегодня в париже мы выиграли турнир по волейболу :)</p>
                 </div>
             </li>
@@ -57,6 +59,6 @@
     <footer class="cont">
         <p>&copy; 2026 Мой личный блог.</p>
     </footer>
-
+<script src="/1Html/1JS.js"></script>
 </body>
 </html>
